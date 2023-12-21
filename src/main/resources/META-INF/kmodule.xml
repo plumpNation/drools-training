@@ -100,5 +100,8 @@
     <ksession name="FamilyVisaApplicationStep5"/>
   </kbase>
 
+  <kbase packages="io.github.plumpnation.drools">
+    <ksession name="PlumpNationSession1"/>
+  </kbase>
 
 </kmodule>

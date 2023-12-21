@@ -1,0 +1,11 @@
+package io.github.plumpnation.drools
+
+import io.github.aasaru.drools.domain.Passport;
+
+rule "Expired or full passport"
+  dialect "java"
+  when
+	Passport( isExpired() || unusedVisaPages == 0 )
+  then
+	System.out.println( "This passport is INVALID because it is expired or has no space for visa" );
+end
